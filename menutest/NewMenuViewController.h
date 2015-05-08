@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+typedef enum {
+    menuOpened,
+    menuClose,
+    menuAnimation
+} menuState;
 
+@interface NewMenuViewController : UIViewController <UIGestureRecognizerDelegate>
 
 @end
 
